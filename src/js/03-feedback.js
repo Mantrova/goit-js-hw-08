@@ -8,7 +8,7 @@ const refs = {
 
 let feedbackFormObject = {};
 
-refs.feedbackFormEl.addEventListener("input", throttler(onFeedbackFormInput, 500));
+refs.feedbackFormEl.addEventListener("input", throttle(onFeedbackFormInput, 500));
 
 function onFeedbackFormInput(e) {
     feedbackFormObject[e.target.name] = e.target.value;
